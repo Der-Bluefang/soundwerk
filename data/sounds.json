@@ -88,10 +88,10 @@
     },
     {
       "id": "re3-duesseldorf-flughafen",
-      "title": "Düsseldorf Flughafen",
+      "title": "Düsseldorf Flughafen / Düsseldorf Airport",
       "category": "Haltestellen",
       "file": "assets/audio/re3/re3-duesseldorf-flughafen.mp3",
-      "description": "Reine deutsche Stationsnennung ohne Ausstiegsseite."
+      "description": "Deutsche und englische Stationsnennung ohne Ausstiegsseite."
     },
     {
       "id": "re3-duesseldorf-hbf",
