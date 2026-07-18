@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#171a1e" />
+    <meta name="description" content="Ein schnelles, geräteübergreifendes Soundboard mit Baustein-Composer." />
+    <link rel="icon" href="assets/icons/app-icon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="stylesheet" href="assets/css/app.css" />
+    <title>Soundwerk</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Zum Soundboard springen</a>
+
+    <header class="app-header">
+      <div class="brand" aria-label="Soundwerk">
+        <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true">
+          <path d="M5 17.5h3.5L13 10v12L8.5 14.5H5z" fill="currentColor" />
+          <path d="M17.5 11.5a7 7 0 0 1 0 9M21 8a12 12 0 0 1 0 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.25" />
+        </svg>
+        <span>Soundwerk</span>
+      </div>
+      <p class="app-header__hint">Soundboard &amp; Baustein-Composer</p>
+    </header>
+
+    <main id="main-content" class="app-shell">
+      <aside class="controls panel" aria-label="Soundboard-Steuerung">
+        <div class="panel__eyebrow">Bibliothek</div>
+        <h1>Klänge auswählen</h1>
+
+        <label class="search-field" for="sound-search">
+          <span class="sr-only">Sounds durchsuchen</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21 21-4.35-4.35m1.35-5.15a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" /></svg>
+          <input id="sound-search" type="search" autocomplete="off" placeholder="Suchen …" />
+        </label>
+
+        <nav id="category-filter" class="filter-list" aria-label="Kategorien"></nav>
+
+        <button id="favourites-toggle" class="text-button" type="button" aria-pressed="false">
+          <span aria-hidden="true">★</span> Nur Favoriten
+        </button>
+
+        <div class="controls__foot">
+          <label class="volume-control" for="volume">
+            <span>Lautstärke</span>
+            <output id="volume-value" for="volume">80 %</output>
+          </label>
+          <input id="volume" class="range" type="range" min="0" max="100" step="1" value="80" />
+          <button id="stop-all" class="stop-button" type="button">
+            <span aria-hidden="true">■</span> Alles stoppen
+          </button>
+          <p class="keyboard-hint"><kbd>1</kbd>–<kbd>9</kbd> startet einen zugewiesenen Sound · <kbd>Esc</kbd> stoppt.</p>
+        </div>
+      </aside>
+
+      <section class="board" aria-labelledby="sounds-heading">
+        <div class="board__head">
+          <div>
+            <div class="panel__eyebrow">Soundboard</div>
+            <h2 id="sounds-heading">Bereit zum Auslösen</h2>
+          </div>
+          <p id="sound-count" class="result-count" aria-live="polite"></p>
+        </div>
+
+        <div id="sound-grid" class="sound-grid" aria-live="polite" aria-busy="true"></div>
+      </section>
+
+      <aside class="composer panel" aria-labelledby="composer-heading">
+        <div class="composer__head">
+          <div>
+            <div class="panel__eyebrow">Ablauf</div>
+            <h2 id="composer-heading">Composer</h2>
+          </div>
+          <button id="clear-composer" class="icon-button" type="button" title="Composer leeren" aria-label="Composer leeren">×</button>
+        </div>
+
+        <p class="composer__intro">Füge Soundbausteine hinzu und spiele sie als Ablauf nacheinander ab.</p>
+        <ol id="composer-list" class="composer-list" aria-label="Soundablauf"></ol>
+
+        <div class="composer__actions">
+          <button id="play-composer" class="primary-button" type="button">
+            <span aria-hidden="true">▶</span> Ablauf starten
+          </button>
+        </div>
+
+        <section class="now-playing" aria-labelledby="now-playing-heading">
+          <div class="panel__eyebrow">Wiedergabe</div>
+          <h3 id="now-playing-heading">Jetzt aktiv</h3>
+          <p id="now-playing-value">Bereit</p>
+          <p id="playback-status" class="playback-status" aria-live="polite"></p>
+        </section>
+      </aside>
+    </main>
+
+    <div id="live-region" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+    <noscript>Für das Soundboard muss JavaScript aktiviert sein.</noscript>
+    <script type="module" src="assets/js/app.js"></script>
+  </body>
+</html>

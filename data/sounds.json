@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "title": "Soundwerk Demo",
+  "sounds": [
+    {
+      "id": "start-gong",
+      "title": "Startgong",
+      "category": "Signale",
+      "file": "assets/audio/start-gong.mp3",
+      "description": "Kurzer, klarer Einstiegston.",
+      "shortcut": "1"
+    },
+    {
+      "id": "attention-signal",
+      "title": "Aufmerksamkeit",
+      "category": "Signale",
+      "file": "assets/audio/attention-signal.mp3",
+      "description": "Zweistufiges Hinweissignal.",
+      "shortcut": "2"
+    },
+    {
+      "id": "cue-a",
+      "title": "Baustein A",
+      "category": "Bausteine",
+      "file": "assets/audio/cue-a.mp3",
+      "description": "Synthetischer Demo-Baustein für Abläufe.",
+      "shortcut": "3"
+    },
+    {
+      "id": "cue-b",
+      "title": "Baustein B",
+      "category": "Bausteine",
+      "file": "assets/audio/cue-b.mp3",
+      "description": "Synthetischer Demo-Baustein für Abläufe.",
+      "shortcut": "4"
+    }
+  ]
+}

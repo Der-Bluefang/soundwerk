@@ -1,0 +1,9 @@
+.DS_Store
+Thumbs.db
+*.tmp
+
+# Private/licensed source material and derived RE3 assets: never commit or publish.
+incoming/
+work/
+assets/audio/re3/
+data/sounds.re3.private.json

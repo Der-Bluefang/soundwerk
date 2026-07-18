@@ -1,0 +1,10 @@
+{
+  "name": "soundboard-web",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "validate": "node --test && node --check assets/js/core.js && node --check assets/js/app.js && bash -n tools/prepare-audio.sh"
+  }
+}
