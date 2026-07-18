@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "title": "Soundwerk RE3 – privat",
+  "title": "Soundwerk RE3",
   "sounds": [
     {
       "id": "re3-willkommensgong",
@@ -28,77 +28,77 @@
       "title": "Dortmund Hbf",
       "category": "Haltestellen",
       "file": "assets/audio/re3/re3-dortmund-hbf.mp3",
-      "description": "Reine Stationsnennung ohne Ausstiegsseite."
+      "description": "Gong, Ankunftsansage und Anschlüsse Richtung Bochum und Essen, Hagen und Wuppertal, Lünen und Unna."
     },
     {
       "id": "re3-dortmund-mengede",
       "title": "Dortmund-Mengede",
       "category": "Haltestellen",
       "file": "assets/audio/re3/re3-dortmund-mengede.mp3",
-      "description": "Reine Stationsnennung ohne Ausstiegsseite."
+      "description": "Gong und vollständige Ankunftsansage ohne Ausstiegsseite."
     },
     {
       "id": "re3-castrop-rauxel-hbf",
       "title": "Castrop-Rauxel Hbf",
       "category": "Haltestellen",
       "file": "assets/audio/re3/re3-castrop-rauxel-hbf.mp3",
-      "description": "Reine Stationsnennung ohne Ausstiegsseite."
+      "description": "Gong und vollständige Ankunftsansage ohne Ausstiegsseite."
     },
     {
       "id": "re3-herne",
       "title": "Herne",
       "category": "Haltestellen",
       "file": "assets/audio/re3/re3-herne.mp3",
-      "description": "Reine Stationsnennung ohne Ausstiegsseite."
+      "description": "Gong und vollständige Ankunftsansage ohne Ausstiegsseite."
     },
     {
       "id": "re3-wanne-eickel-hbf",
       "title": "Wanne-Eickel Hbf",
       "category": "Haltestellen",
       "file": "assets/audio/re3/re3-wanne-eickel-hbf.mp3",
-      "description": "Reine Stationsnennung ohne Ausstiegsseite."
+      "description": "Gong, Ankunftsansage und Anschluss Richtung Bochum."
     },
     {
       "id": "re3-gelsenkirchen-hbf",
       "title": "Gelsenkirchen Hbf",
       "category": "Haltestellen",
       "file": "assets/audio/re3/re3-gelsenkirchen-hbf.mp3",
-      "description": "Reine Stationsnennung ohne Ausstiegsseite."
+      "description": "Gong und vollständige Ankunftsansage ohne Ausstiegsseite."
     },
     {
       "id": "re3-essen-altenessen",
       "title": "Essen-Altenessen",
       "category": "Haltestellen",
       "file": "assets/audio/re3/re3-essen-altenessen.mp3",
-      "description": "Reine Stationsnennung ohne Ausstiegsseite."
+      "description": "Gong und vollständige Ankunftsansage ohne Ausstiegsseite."
     },
     {
       "id": "re3-oberhausen-hbf",
       "title": "Oberhausen Hbf",
       "category": "Haltestellen",
       "file": "assets/audio/re3/re3-oberhausen-hbf.mp3",
-      "description": "Reine Stationsnennung ohne Ausstiegsseite."
+      "description": "Gong, Ankunftsansage und Anschluss Richtung Wesel."
     },
     {
       "id": "re3-duisburg-hbf",
       "title": "Duisburg Hbf",
       "category": "Haltestellen",
       "file": "assets/audio/re3/re3-duisburg-hbf.mp3",
-      "description": "Reine Stationsnennung ohne Ausstiegsseite."
+      "description": "Gong, Ankunftsansage und Anschlüsse Richtung Krefeld und Xanten."
     },
     {
       "id": "re3-duesseldorf-flughafen",
       "title": "Düsseldorf Flughafen / Düsseldorf Airport",
       "category": "Haltestellen",
       "file": "assets/audio/re3/re3-duesseldorf-flughafen.mp3",
-      "description": "Deutsche und englische Stationsnennung ohne Ausstiegsseite."
+      "description": "Gong, deutsche Ankunftsansage und englische Next-stop-Ansage ohne Ausstiegsseite."
     },
     {
       "id": "re3-duesseldorf-hbf",
       "title": "Düsseldorf Hbf",
       "category": "Haltestellen",
       "file": "assets/audio/re3/re3-duesseldorf-hbf.mp3",
-      "description": "Reine Stationsnennung ohne Ausstiegsseite."
+      "description": "Gong, Ankunftsansage sowie Anschluss an S-Bahnen und Fernverkehr."
     }
   ]
 }
