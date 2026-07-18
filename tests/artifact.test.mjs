@@ -30,7 +30,7 @@ test('the app includes PWA files and a versioned sound manifest', async () => {
   const sounds = JSON.parse(await readProjectFile('data/sounds.json'));
   assert.equal(sounds.version, 1);
   assert.ok(Array.isArray(sounds.sounds));
-  assert.ok(sounds.sounds.length >= 4);
+  assert.ok(sounds.sounds.length >= 14);
 });
 
 test('the service worker refreshes same-origin assets online and uses its cache only as an offline fallback', async () => {

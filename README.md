@@ -2,8 +2,6 @@
 
 Ein schnelles, responsives **Soundboard mit Baustein-Composer**. Es besteht nur aus statischen Dateien und ist damit direkt für GitHub Pages geeignet. Nach dem ersten Aufruf kann es als PWA installiert und offline weitergenutzt werden.
 
-> Die vier mitgelieferten Demo-Töne sind künstlich erzeugte Platzhalter. Sie enthalten keine fremden Ansagen, Musik oder sonstiges Material Dritter.
-
 ## Funktionen
 
 - Einzelne Sounds abspielen, durchsuchen und nach Kategorien filtern
@@ -24,15 +22,11 @@ python3 -m http.server 4173
 
 Danach `http://localhost:4173` im Browser öffnen. Ein lokaler Server ist nötig, weil Browser JSON- und Service-Worker-Dateien nicht zuverlässig über `file://` laden.
 
-### Privates Soundset lokal öffnen
+### RE3-Soundset
 
-Für Material, das **nicht veröffentlicht** werden soll, liegt ein lokales, von Git ignoriertes Soundset unter `data/sounds.re3.private.json`. Es wird ausschließlich mit folgendem Parameter geladen:
+Das Standard-Soundset enthält den RE3-Pack mit Willkommensgong, Begrüßungen und den vorgesehenen Haltestellen. Es wird aus [`data/sounds.json`](data/sounds.json) geladen; die ausgelieferten Clips liegen unter `assets/audio/re3/`.
 
-```text
-http://localhost:4173/?soundset=re3
-```
-
-Die zugehörigen Audiodateien liegen unter `assets/audio/re3/` und werden durch `.gitignore` vom Commit ausgeschlossen. Ohne den Parameter startet weiterhin das veröffentlichbare Demo-Soundset.
+Die ursprüngliche Aufnahme, Transkripte und Render-Arbeitsdateien verbleiben bewusst unter `incoming/` bzw. `work/` und werden nicht versioniert. Dieses Repository ist für die private Nutzung vorgesehen; die Zugriffsrechte für enthaltene Audiodateien liegen bei seinem Eigentümer.
 
 ## Inhalte bearbeiten
 
@@ -63,15 +57,9 @@ Danach entsteht `assets/audio/mein-sound.mp3`. Ergänze anschließend den passen
 
 ## GitHub Pages veröffentlichen
 
-Für einen weltweit erreichbaren Link ist ein **öffentliches** Repository am unkompliziertesten. Prüfe vor dem Upload, dass du alle Rechte an den Audiodateien besitzt – öffentliches Hosting verteilt sie mit.
+Das Repository ist für private Nutzung vorgesehen. Vor einem GitHub-Pages-Deployment muss der Eigentümer ausdrücklich prüfen, ob die gewählte Pages-Zugriffskonfiguration die enthaltenen Audiodateien nur für berechtigte Personen bereitstellt. Eine normale GitHub-Pages-URL kann trotz privatem Repository öffentlich erreichbar sein.
 
-1. Mit dem vorgesehenen **Bluefang-GitHub-Konto** anmelden (nicht mit einem anderen bereits eingeloggten Konto).
-2. Repository anlegen, Änderungen committen und pushen.
-3. In GitHub: **Settings → Pages → Build and deployment → Deploy from a branch**.
-4. Branch `main` und Ordner `/(root)` wählen.
-5. GitHub zeigt anschließend die öffentliche Pages-URL an.
-
-GitHub Pages ist bewusst rein statisch: Die Webapp kann Sounds abspielen, Bausteine zusammenstellen und Favoriten lokal speichern. Das dauerhafte Hochladen oder Bearbeiten von Audio direkt im Browser benötigt dagegen ein separates Backend bzw. GitHub-Authentifizierung. Für dieses Projekt erfolgt die dauerhafte Pflege daher sauber über die versionierten Repo-Dateien.
+GitHub Pages ist rein statisch: Die Webapp kann Sounds abspielen, Bausteine zusammenstellen und Favoriten lokal speichern. Das dauerhafte Hochladen oder Bearbeiten von Audio direkt im Browser benötigt dagegen ein separates Backend bzw. GitHub-Authentifizierung. Die Pflege erfolgt daher über die versionierten Repo-Dateien.
 
 ## Qualität prüfen
 

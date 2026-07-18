@@ -1,7 +1,7 @@
 const AUDIO_PATH_PREFIX = 'assets/audio/';
 
-export function manifestPathFor(soundset) {
-  return soundset === 're3' ? 'data/sounds.re3.private.json' : 'data/sounds.json';
+export function manifestPathFor() {
+  return 'data/sounds.json';
 }
 
 export function storedNumber(rawValue, fallback) {

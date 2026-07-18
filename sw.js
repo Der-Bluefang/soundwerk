@@ -1,4 +1,4 @@
-const CACHE_NAME = 'soundwerk-shell-v2';
+const CACHE_NAME = 'soundwerk-shell-v3';
 const APP_SHELL = [
   './',
   './index.html',
@@ -8,10 +8,20 @@ const APP_SHELL = [
   './assets/js/core.js',
   './assets/js/app.js',
   './assets/icons/app-icon.svg',
-  './assets/audio/start-gong.mp3',
-  './assets/audio/attention-signal.mp3',
-  './assets/audio/cue-a.mp3',
-  './assets/audio/cue-b.mp3',
+  './assets/audio/re3/re3-willkommensgong.mp3',
+  './assets/audio/re3/re3-willkommen-duesseldorf.mp3',
+  './assets/audio/re3/re3-willkommen-dortmund.mp3',
+  './assets/audio/re3/re3-dortmund-hbf.mp3',
+  './assets/audio/re3/re3-dortmund-mengede.mp3',
+  './assets/audio/re3/re3-castrop-rauxel-hbf.mp3',
+  './assets/audio/re3/re3-herne.mp3',
+  './assets/audio/re3/re3-wanne-eickel-hbf.mp3',
+  './assets/audio/re3/re3-gelsenkirchen-hbf.mp3',
+  './assets/audio/re3/re3-essen-altenessen.mp3',
+  './assets/audio/re3/re3-oberhausen-hbf.mp3',
+  './assets/audio/re3/re3-duisburg-hbf.mp3',
+  './assets/audio/re3/re3-duesseldorf-flughafen.mp3',
+  './assets/audio/re3/re3-duesseldorf-hbf.mp3',
 ];
 
 function networkFirst(request, fallback) {

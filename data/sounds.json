@@ -1,38 +1,104 @@
 {
   "version": 1,
-  "title": "Soundwerk Demo",
+  "title": "Soundwerk RE3 – privat",
   "sounds": [
     {
-      "id": "start-gong",
-      "title": "Startgong",
+      "id": "re3-willkommensgong",
+      "title": "Willkommensgong",
       "category": "Signale",
-      "file": "assets/audio/start-gong.mp3",
-      "description": "Kurzer, klarer Einstiegston.",
-      "shortcut": "1"
+      "file": "assets/audio/re3/re3-willkommensgong.mp3",
+      "description": "Eigenständiger Gong vor der Begrüßung."
     },
     {
-      "id": "attention-signal",
-      "title": "Aufmerksamkeit",
-      "category": "Signale",
-      "file": "assets/audio/attention-signal.mp3",
-      "description": "Zweistufiges Hinweissignal.",
-      "shortcut": "2"
+      "id": "re3-willkommen-duesseldorf",
+      "title": "Willkommen Richtung Düsseldorf",
+      "category": "Willkommen",
+      "file": "assets/audio/re3/re3-willkommen-duesseldorf.mp3",
+      "description": "Begrüßung inklusive Willkommensgong."
     },
     {
-      "id": "cue-a",
-      "title": "Baustein A",
-      "category": "Bausteine",
-      "file": "assets/audio/cue-a.mp3",
-      "description": "Synthetischer Demo-Baustein für Abläufe.",
-      "shortcut": "3"
+      "id": "re3-willkommen-dortmund",
+      "title": "Willkommen Richtung Dortmund",
+      "category": "Willkommen",
+      "file": "assets/audio/re3/re3-willkommen-dortmund.mp3",
+      "description": "Zusammengesetzte Originalansage inklusive Willkommensgong."
     },
     {
-      "id": "cue-b",
-      "title": "Baustein B",
-      "category": "Bausteine",
-      "file": "assets/audio/cue-b.mp3",
-      "description": "Synthetischer Demo-Baustein für Abläufe.",
-      "shortcut": "4"
+      "id": "re3-dortmund-hbf",
+      "title": "Dortmund Hbf",
+      "category": "Haltestellen",
+      "file": "assets/audio/re3/re3-dortmund-hbf.mp3",
+      "description": "Reine Stationsnennung ohne Ausstiegsseite."
+    },
+    {
+      "id": "re3-dortmund-mengede",
+      "title": "Dortmund-Mengede",
+      "category": "Haltestellen",
+      "file": "assets/audio/re3/re3-dortmund-mengede.mp3",
+      "description": "Reine Stationsnennung ohne Ausstiegsseite."
+    },
+    {
+      "id": "re3-castrop-rauxel-hbf",
+      "title": "Castrop-Rauxel Hbf",
+      "category": "Haltestellen",
+      "file": "assets/audio/re3/re3-castrop-rauxel-hbf.mp3",
+      "description": "Reine Stationsnennung ohne Ausstiegsseite."
+    },
+    {
+      "id": "re3-herne",
+      "title": "Herne",
+      "category": "Haltestellen",
+      "file": "assets/audio/re3/re3-herne.mp3",
+      "description": "Reine Stationsnennung ohne Ausstiegsseite."
+    },
+    {
+      "id": "re3-wanne-eickel-hbf",
+      "title": "Wanne-Eickel Hbf",
+      "category": "Haltestellen",
+      "file": "assets/audio/re3/re3-wanne-eickel-hbf.mp3",
+      "description": "Reine Stationsnennung ohne Ausstiegsseite."
+    },
+    {
+      "id": "re3-gelsenkirchen-hbf",
+      "title": "Gelsenkirchen Hbf",
+      "category": "Haltestellen",
+      "file": "assets/audio/re3/re3-gelsenkirchen-hbf.mp3",
+      "description": "Reine Stationsnennung ohne Ausstiegsseite."
+    },
+    {
+      "id": "re3-essen-altenessen",
+      "title": "Essen-Altenessen",
+      "category": "Haltestellen",
+      "file": "assets/audio/re3/re3-essen-altenessen.mp3",
+      "description": "Reine Stationsnennung ohne Ausstiegsseite."
+    },
+    {
+      "id": "re3-oberhausen-hbf",
+      "title": "Oberhausen Hbf",
+      "category": "Haltestellen",
+      "file": "assets/audio/re3/re3-oberhausen-hbf.mp3",
+      "description": "Reine Stationsnennung ohne Ausstiegsseite."
+    },
+    {
+      "id": "re3-duisburg-hbf",
+      "title": "Duisburg Hbf",
+      "category": "Haltestellen",
+      "file": "assets/audio/re3/re3-duisburg-hbf.mp3",
+      "description": "Reine Stationsnennung ohne Ausstiegsseite."
+    },
+    {
+      "id": "re3-duesseldorf-flughafen",
+      "title": "Düsseldorf Flughafen",
+      "category": "Haltestellen",
+      "file": "assets/audio/re3/re3-duesseldorf-flughafen.mp3",
+      "description": "Reine deutsche Stationsnennung ohne Ausstiegsseite."
+    },
+    {
+      "id": "re3-duesseldorf-hbf",
+      "title": "Düsseldorf Hbf",
+      "category": "Haltestellen",
+      "file": "assets/audio/re3/re3-duesseldorf-hbf.mp3",
+      "description": "Reine Stationsnennung ohne Ausstiegsseite."
     }
   ]
 }

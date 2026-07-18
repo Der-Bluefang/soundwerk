@@ -66,8 +66,8 @@ test('filterSounds combines category, free-text search, and favourites-only sele
   );
 });
 
-test('manifestPathFor only permits the defined private RE3 sound set', () => {
-  assert.equal(manifestPathFor('re3'), 'data/sounds.re3.private.json');
+test('manifestPathFor always resolves the bundled default sound set', () => {
+  assert.equal(manifestPathFor('re3'), 'data/sounds.json');
   assert.equal(manifestPathFor('unknown'), 'data/sounds.json');
   assert.equal(manifestPathFor(null), 'data/sounds.json');
 });
